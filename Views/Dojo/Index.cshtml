@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+</head>
+<body>
+    <form action="method" method="POST" class="contain">
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" class="form-control" name = "name">
+        </div>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Dojo Location</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="location">
+            <option value="Seattle">Seattle</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Newport Beach">Newport Beach</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Dallas">Dallas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Favorite Language</label>
+            <select multiple class="form-control" name="language">
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="FORTRAN">FORTRAN</option>
+            <option value="RAL">RAL</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Comment (optional)</label>
+            <textarea class="form-control" rows="3" name="comment"></textarea>
+        </div>
+        <button class="btn btn-primary">Sumbit</button>
+    </form>
+</body>
+</html>
