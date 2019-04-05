@@ -1,5 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
+using DojoSurvey.Models;
 
 namespace DojoSurvey.Controllers
 {
@@ -13,17 +18,20 @@ namespace DojoSurvey.Controllers
         }
 
         [HttpPost]
-        [Route("method")]
+        [Route("survey")]
         public IActionResult Method(string name, string email, string location, string language, string comment)
         {
-            ViewBag.Name = name;
-            System.Console.WriteLine(ViewBag.Name);
-            ViewBag.Email = email;
-            ViewBag.Location = location;
-            ViewBag.Language = language;
-            ViewBag.Comment = comment;
-
-            return View("Method");
+            Survey form = new Survey
+            {
+                
+                Name = name,
+                Email = email,
+                Location = location,
+                Language = language,
+                Comment = comment
+            };
+            System.Console.WriteLine(form.Name);
+            return View(form);
         }
     }
 }

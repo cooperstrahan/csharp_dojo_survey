@@ -9,13 +9,15 @@
     <title>Index Page</title>
 </head>
 <body>
+    @using DojoSurvey.Models
+    @model Survey
     <h1>Method Page being created</h1>
     @{
-    <h3>Name: @ViewBag.Name</h3>
-    <h3>Email: @ViewBag.Email</h3>
-    <h3>Location: @ViewBag.Location</h3>
-    <h3>Language: @ViewBag.Language</h3>
-    <h3>Comment: @ViewBag.Comment</h3>
+    <h3>Name: @Model.Name</h3>
+    <h3>Email: @Model.Email</h3>
+    <h3>Location: @Model.Location</h3>
+    <h3>Language: @Model.Language</h3>
+    <h3>Comment: @Model.Comment</h3>
     }
     
 </body>
