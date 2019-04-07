@@ -22,3 +22,4 @@
 /Users/cooperstrahan/Documents/Coding_Dojo/mvc/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.pdb
 /Users/cooperstrahan/Documents/Coding_Dojo/mvc/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.csproj.CopyComplete
 /Users/cooperstrahan/Documents/Coding_Dojo/mvc/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Dojo/Method.g.cshtml.cs
+/Users/cooperstrahan/Documents/Coding_Dojo/mvc/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs

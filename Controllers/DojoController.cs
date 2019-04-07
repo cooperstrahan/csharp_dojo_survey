@@ -18,20 +18,26 @@ namespace DojoSurvey.Controllers
         }
 
         [HttpPost]
-        [Route("survey")]
-        public IActionResult Method(string name, string email, string location, string language, string comment)
+        [Route("survey/create")]
+        public IActionResult Create(Survey survey)
         {
-            Survey form = new Survey
+            System.Console.WriteLine("NewUser is being Called");
+            if(ModelState.IsValid)
             {
-                
-                Name = name,
-                Email = email,
-                Location = location,
-                Language = language,
-                Comment = comment
-            };
-            System.Console.WriteLine(form.Name);
-            return View(form);
+                return RedirectToAction("method", survey);
+            }
+            else
+            {
+                return View("Index");
+            }
+        }
+        
+
+        [HttpGet]
+        [Route("method")]
+        public IActionResult Method(Survey survey)
+        {
+            return View(survey);
         }
     }
 }
